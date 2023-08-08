@@ -1,0 +1,2 @@
+# spring boot start
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.yidiansishiyi.zelinaiclientsdk.ZelinaiClientConfig
