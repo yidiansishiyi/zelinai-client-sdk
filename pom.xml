@@ -116,6 +116,7 @@
 					</execution>
 				</executions>
 			</plugin>
+
 			<!--公钥私钥插件，也就是上传需要进行验证用户名和密码过程中需要用到的插件-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -125,6 +126,27 @@
 					<execution>
 						<id>sign-artifacts</id>
 						<phase>verify</phase>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+					<!-- 忽略生成文档中的错误 -->
+					<additionalparam>-Xdoclint:none</additionalparam>
+					<aggregate>true</aggregate>
+					<charset>UTF-8</charset><!-- utf-8读取文件 -->
+					<encoding>UTF-8</encoding><!-- utf-8进行编码代码 -->
+					<docencoding>UTF-8</docencoding><!-- utf-8进行编码文档 -->
+				</configuration>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+<!--						<goals>-->
+<!--							<goal>jar</goal>-->
+<!--						</goals>-->
 					</execution>
 				</executions>
 			</plugin>
