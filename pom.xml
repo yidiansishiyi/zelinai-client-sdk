@@ -124,7 +124,7 @@
 				<version>1.5</version>
 				<executions>
 					<execution>
-						<id>sign-artifacts</id>
+						<id>gpg</id>
 						<phase>verify</phase>
 					</execution>
 				</executions>
