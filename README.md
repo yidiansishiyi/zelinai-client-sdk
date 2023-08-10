@@ -3,7 +3,7 @@
 > 2. API 接口对入参做了限制参考官方对数据要求进行提交数据 
 > 3. 来源 : 一点四十一
 > 4. 作者 : sanqi
-> 5. 喜欢支持一下 starred
+> 5. 喜欢支持一下 star
 ## 官方信息
 #### 官方接口文档
 https://kaokaofs.feishu.cn/docx/Mq8Hdh1YqoZorEx2cgqcnGOPnof
