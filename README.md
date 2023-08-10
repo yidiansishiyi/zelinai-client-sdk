@@ -116,4 +116,4 @@ class AiManagerTest {
 ###### 调用示例成功截图
 ![img.png](img/img4.png)
 ## 异常 bug 列表
->  0001 char = '\n" 为传入参数的一部分时返回参数异常 
+>  0001 char = '\n' 为传入参数的一部分时返回参数异常 
