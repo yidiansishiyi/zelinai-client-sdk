@@ -6,7 +6,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-
+/**
+ * 请求体拼接工具类
+ *
+ * @author sanqi
+ */
 public class ApiAuthUtils {
 
     public static String generateNonce(Map<String,String> body, String appsecret) {

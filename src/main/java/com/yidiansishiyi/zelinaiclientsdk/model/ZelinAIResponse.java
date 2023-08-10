@@ -8,5 +8,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ZelinAIResponse {
+    /**
+     * @param aiContent ai返回参数
+     */
     private String aiContent;
 }

@@ -116,19 +116,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
-			<!--公钥私钥插件，也就是上传需要进行验证用户名和密码过程中需要用到的插件-->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-gpg-plugin</artifactId>
-				<version>1.5</version>
-				<executions>
-					<execution>
-						<id>gpg</id>
-						<phase>verify</phase>
-					</execution>
-				</executions>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -144,12 +131,28 @@
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
-<!--						<goals>-->
-<!--							<goal>jar</goal>-->
-<!--						</goals>-->
+						<goals>
+							<goal>jar</goal>
+						</goals>
 					</execution>
 				</executions>
 			</plugin>
+			<!--公钥私钥插件，也就是上传需要进行验证用户名和密码过程中需要用到的插件-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.5</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 			<!--部署插件-->
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>

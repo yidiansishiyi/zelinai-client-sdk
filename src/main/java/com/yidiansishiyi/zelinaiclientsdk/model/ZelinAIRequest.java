@@ -10,19 +10,21 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ZelinAIRequest implements Serializable {
-
     /**
-     * 请求体示例
-     * {
-     *     "app_id": "xxx",
-     *     "request_id": "xxx",
-     *     "uid": "xxx",
-     *     "content": "你好"
-     * }
+     * @param app_id 提供方提供
      */
     private String app_id;
+    /**
+     * @param request_id 调用方提供会话id
+     */
     private String request_id;
+    /**
+     * @param uid 调用方提供用户id
+     */
     private String uid;
+    /**
+     * @param content 用户输入
+     */
     private String content;
     private static final long serialVersionUID = 1L;
 
