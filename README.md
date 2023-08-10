@@ -93,7 +93,7 @@ class AiManagerTest {
     @Test
     void doChatZelin() {
         ZelinAIRequest zelinAIRequest = new ZelinAIRequest();
-        zelinAIRequest.setApp_id("nBoA5U7hJtQzqNMwLfLJTi");
+        zelinAIRequest.setApp_id("app id");
         zelinAIRequest.setRequest_id("15464548417");
         zelinAIRequest.setUid("841894874897");
         zelinAIRequest.setContent("分析需求：分析增长情况，请使用折线图 原始数据：日期,用户数1号,10 2号,20 3号,30 4号,90 5号,0 6号,10 号,20");
